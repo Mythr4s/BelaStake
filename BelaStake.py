@@ -4,7 +4,7 @@ Author: ihashblox/Mythr4s
 About: what this program does is calculate the staked amount of Bela over
 a period of time.
 """""
-# Accept the inputs
+# inputs
 startBalance = float(input("Enter the investment amount: "))
 rate = int(input("Enter the rate as a %: "))
 time = int(input("Number of months you wish to stake: "))
@@ -16,7 +16,7 @@ totalInterest = 0.0
 print("%4s%18s%10s%16s" % \
 ("Starting balance","Interest", "Ending balance", "time",))
 
-# Compute and display the results for each year
+#computation
 for time in range(1, time + 1):
     interest = startBalance * rate
 endBalance = startBalance + interest
