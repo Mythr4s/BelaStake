@@ -20,7 +20,7 @@ print("%4s%18s%10s%16s" % \
 for time in range(1, time + 1):
     interest = startBalance * rate
 endBalance = startBalance + interest
-print("%4d%18.2f%10.2f%16.2f" % \
+print("%4d%18.18f%10.18f%16.18f" % \
    (startBalance, interest,time, endBalance,))
 startBalance = endBalance
 totalInterest += interest
